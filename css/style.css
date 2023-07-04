@@ -1,0 +1,301 @@
+body{
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    background: ghostwhite;
+    border-radius: 5px;
+    font-weight: bold;
+    color: darkgoldenrod;
+    padding: 5px 20px 5px 20px;
+    box-shadow: 2px 2px 5px rgb(88, 87, 87);
+    text-decoration: none;
+}
+
+h1{
+    color: ghostwhite;
+    font-size: 5em;
+    margin: 0;
+    text-shadow: 2px 2px 5px gold;
+}
+
+h2{
+    color: ghostwhite;
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-shadow: 0px 0px 20px gold;
+}
+
+h3{
+   color: rgb(29, 87, 88);
+ 
+}
+
+
+li{
+    list-style: none;  
+    font-size: 18px;  
+    margin-right: 40px;
+}
+
+ul{
+    display: flex;
+}
+
+
+#nombre{
+    color: darkgoldenrod;
+    font-size: 32px;
+    margin-top: 0;
+    margin-left: 20px;
+    text-shadow: 2px 2px 5px gold;
+    
+}
+
+header{ 
+    background: url(Bienvenidos.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.container{
+   /* border: 2px solid red;*/
+    margin: auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo{
+    margin-top: 100px;
+    text-align: center;
+}
+
+/******Seccion carta*******/
+.fotos{
+    /*float: left;*/
+    margin-left: 40px;  
+    height: 200px;
+    width: 300px;
+}
+
+.container_carta{
+    background: linear-gradient(#d18c32,#85601B, #633a05, #612301) ;
+    /*border: 2px solid blue;*/
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    /**grid-template-rows: minmax(100px, auto);*/
+    
+}
+
+.container_carta div:hover{
+    border: 1px solid rgb(206, 169, 169);
+    
+}
+
+.cartilla{
+    background: rgba(157, 162, 167, 0.2);
+    backdrop-filter: blur(8px);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 3px 5px 10px rgb(43, 40, 40);
+    display: grid;
+    margin: 10px 5px 5px 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.descripcion{
+    
+    font-size: 20px;
+
+}
+
+.titulo_carta{
+   /* background-color: rgb(220, 230, 230);*/
+    align-self: self-start;
+    font-size: 32px;
+    text-shadow: 0 0 0 10px solid gray;
+}
+
+.comida{
+    background: linear-gradient(#58110B, #CD9040,#85601B, #D18C32) ;
+    text-align: center;
+}
+
+/*****Historia********/
+.contenedor_historia{
+    align-items: center;
+    background: url(sala.jpg);
+    border: 2px solid rgba(230, 213, 213, 0,5);
+    box-shadow: 0px 0px 0px rgba(133, 96, 27, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0.5px;
+    text-align: center;
+}
+
+.historia{
+    border: 2px solid rgba(77, 50, 26, 0.3);
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(133, 96, 27, 0.9);
+
+}
+
+.narracion{
+    
+    border-radius: 10px;
+    font-size: 32px;
+    /*grid-template-columns: 100px, 100px;*/
+    width: 60%;
+}
+
+.narracion p{
+    color: antiquewhite;
+}
+
+.narracion:hover{
+    background: rgba(133, 96, 27, 0.4);
+    box-shadow: 2px 2px 10px rgba(133, 96, 27, 0.9);
+}
+
+/*************Formulario de contactos*************/
+
+.contenedor_formulario{
+    align-items: center;
+    /*border: 2px solid black;*/
+    background: linear-gradient(#7E2B01, #572202,#2F1E0A, #212025) ;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+
+}
+
+.formi{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgb(51, 48, 48) ;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/*reposo*/
+
+.caja{
+    margin-bottom: 8px;
+    padding-top: 10px;
+}
+
+label{
+    color: ghostwhite;
+    border: 2px solid silver;
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 30px;
+    padding: 8px 10px;
+    position: relative;
+    text-shadow: 2px 2px 5px gold;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 400px;
+}
+
+label input{
+    background: transparent;
+    border: none;
+    display: block;
+    outline: none;
+    width: 100%;
+}
+
+label span{
+    color: silver;
+    left: 10px;
+    position: absolute;
+    top: 8px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+span, input{
+    font: 16px/16px Verdana;
+}
+
+/*focus*/
+label.focus{
+    border-color: #58110B;
+}
+
+label span.focus{
+    color: #58110B;
+}
+/*top*/
+label span.top{
+    background: #85601B;
+    font-size: 12px;
+    left: 2px;
+    padding: 0 5px;
+    top: -10px;
+}
+
+.formi button{
+    background: #58110B;
+    border: 1px solid #653C0D;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgb(51, 48, 48);
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+
+.formi button:hover{
+    color: #212025;
+    background: #85601B;
+}
+
+
+/**************Footer******************/
+footer{
+    background: #212025;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer p{
+    color: #CD9040;
+    font-size: 24px;
+}
+
+.vinculored{
+    background: transparent;
+    box-shadow: none;
+}
+
+.redsocial{
+   /* background: greenyellow;
+    border: 2px solid blue;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    width: 400px;
+}
+
+.redes{
+  
+    height: 100px;
+    width: 100px;
+}
+
